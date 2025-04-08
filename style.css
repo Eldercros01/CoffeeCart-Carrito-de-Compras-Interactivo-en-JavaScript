@@ -5,6 +5,7 @@
     --primary-yellow: #fec800;
     --dark-gray: #343434;
     --white: #fff;
+    --white2: #efefed;
   }
 
 * {
@@ -43,7 +44,7 @@ header::before {
     position: absolute;
     width: 40%;
     height: 100%;
-    background: #fec800;
+    background: var(--primary-yellow);
     right: 0;
     z-index: -2;
 }
@@ -53,7 +54,7 @@ header::after {
     position: absolute;
     width: 60%;
     height: 100%;
-    background: #efefed;
+    background: var(--white2);
     left: 0;
     z-index: -2;
 }
@@ -98,7 +99,7 @@ header nav .left_side .search input {
     border: none;
     outline: none;
     background: none;
-    border-bottom: 2px solid #343434;
+    border-bottom: 2px solid var(--dark-gray);
     border-bottom-left-radius: 10px;
     padding-left: 20px;
 }
@@ -123,7 +124,7 @@ header nav .right_side ul li {
 }
 
 header nav .right_side ul li a {
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
     transition: .3s linear;
     text-decoration: none;
@@ -135,26 +136,26 @@ header nav .right_side ul li a:hover {
 
 header nav .right_side .help {
     margin: 0 20px 0 40px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid --white;
 }
 
 header nav .right_side .help a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     font-size: 14px;
     transition: .3s linear;
 }
 
 header nav .right_side .help:hover {
-    border-bottom: 2px solid #343434;
+    border-bottom: 2px solid var(--dark-gray);
 }
 
 header nav .right_side .help:hover a {
-    color: #343434;
+    color: var(--dark-gray);
 }
 
 header nav .right_side .menu_btn {
-    color: #fff;
+    color: var(--white);
     margin-left: 20px;
     font-size: 28px;
     cursor: pointer;
@@ -210,7 +211,7 @@ header section .content_bx a:nth-child(3)::before {
     position: absolute;
     width: 0%;
     height: 3px;
-    background: #343434;
+    background: var(--dark-gray);
     bottom: -5px;
     border-radius: 20px;
     transition: .3s linear;
@@ -230,8 +231,8 @@ header section .content_bx .price_bx h5 {
 
 header section .content_bx .price_bx button {
     border-radius: 50%;
-    background: #fec800;
-    color: #fff;
+    background: var(--primary-yellow);
+    color: var(--white);
     border: none;
     outline: none;
     padding: 1px 4px;
@@ -254,7 +255,7 @@ section .steps {
     left: 0;
     width: 80px;
     height: 80%;
-    background: #fec800;
+    background: var(--primary-yellow);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -263,14 +264,14 @@ section .steps {
 
 section .steps h6,
 section .steps h4 {
-    color: #fff;
+    color: var(--white);
 }
 
 section .steps h6 {
     position: relative;
     width: 2px;
     height: 12px;
-    background: #fff;
+    background: var(--white);
     cursor: pointer;
 }
 
@@ -280,7 +281,7 @@ section .steps h6::after {
     position: absolute;
     width: 3px;
     height: 20px;
-    background: #fff;
+    background: var(--white);
     border-radius: 0 0 5px 5px;
     top: -3px;
 }
@@ -342,7 +343,7 @@ section .cart_pagi .pagi {
 section .cart_pagi .pagi button {
     width: 10px;
     height: 10px;
-    background: #fff;
+    background: var(--white);
     border-radius: 50%;
     outline: none;
     border: none;
@@ -369,7 +370,7 @@ section .cart_pagi .cart {
 section .cart_pagi .cart .bi-cart4 {
     padding: 5px 12px;
     border-radius: 50%;
-    background: #fff;
+    background: var(--white);
     font-size: 22px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
     cursor: pointer;
@@ -386,7 +387,7 @@ section .cart_pagi .cart .cart_bx {
     right: 80px;
     width: 200px;
     height: 0px;
-    background: #fff;
+    background: var(--white);
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
